@@ -1,6 +1,8 @@
 \documentclass{article}
 \usepackage{geometry}
 \usepackage{graphics}
+\usepackage{apacite}
+\usepackage{subfiles}
 \geometry{legalpaper, margin=1in}
 
 
@@ -19,7 +21,7 @@
 	\end{huge}
 	\vspace{60mm}
 	\begin{LARGE}  
-		\textbf{Group Number:}\\  
+		\textbf{Group Number: 3}\\  
 	\end{LARGE}
 	\vspace{10mm}
 	\resizebox{100mm}{20mm}{
@@ -44,18 +46,18 @@
 	\pagebreak
 \section{Major Allocation}
 	\begin{center}
-	\resizebox{120mm}{20mm}{%
+	\resizebox{120mm}{20mm}{
 		\begin{tabular}{ |c|c|c| } 
 			\hline
 			 & Name & Major \\ 
 			\hline
-			1 & Qiyuan Sun & Business and Commerce \\ 
+			1 & Qiyuan Sun & Information Systems \\ 
 			\hline
-			2 & Yuren Long & Engineering \\ 
+			2 & Yuren Long & Software Development \\ 
 			\hline
-			3 & Helong Wei &  Music \\ 
+			3 & Helong Wei &  Data Science \\ 
 			\hline
-			4 & Taoyi Xu & Architecture and Interaction Design \\ 
+			4 & Taoyi Xu & Computer Science \\ 
 		\hline
 		\end{tabular}
 	}
@@ -63,20 +65,25 @@
 \pagebreak
 
 \section{Recommendations}
-	\subsection{Business and Commerce}
+	\subsection{Computer Science}
+		\subfile{CS.tex}
 		\pagebreak
-	\subsection{Engineering}
+	\subsection{Data Science}
+		\subfile{DS.tex}
 		\pagebreak
-	\subsection{Music}
+	\subsection{Information Systems}
+		\subfile{IS.tex}
 		\pagebreak
-	\subsection{ Architecture and Interaction Design}
+	\subsection{Software Development}
+		\subfile{SD.tex}
 		\pagebreak
 
 \section{Contributions}
 	\pagebreak
 
-\section{}
-	\bibliographystyle{apalike}
-	\bibliography{draftbib}
+\section{Bibliography}
+	\nocite{*}
+	\bibliographystyle{apacite}
+	\bibliography{draftbib.bib}
 
 \end{document}
